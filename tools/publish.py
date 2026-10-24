@@ -1,12 +1,12 @@
 """Instagramにカルーセル投稿する。
 使い方: python tools/publish.py posts/001_trench
 必要な環境変数: IG_ACCESS_TOKEN, IG_USER_ID
-画像はこのリポジトリ(main)に push 済みで、raw.githubusercontent.com から公開されている前提。
+画像はこのリポジトリ(main、または IG_IMAGE_REF で指定したブランチ)に push 済みで、raw.githubusercontent.com から公開されている前提。
 """
 import json, os, sys, time, pathlib, urllib.parse, urllib.request
 
 API = "https://graph.instagram.com/" + os.environ.get("IG_API_VERSION", "v22.0")
-RAW = "https://raw.githubusercontent.com/yofuku-bucho/yofuku-bucho-images/main/"
+RAW = "https://raw.githubusercontent.com/yofuku-bucho/yofuku-bucho-images/" + os.environ.get("IG_IMAGE_REF", "main") + "/"
 TOKEN = os.environ["IG_ACCESS_TOKEN"]
 USER = os.environ["IG_USER_ID"]
 
