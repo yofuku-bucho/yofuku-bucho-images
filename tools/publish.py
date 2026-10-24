@@ -1,5 +1,6 @@
 """Instagramにカルーセル投稿する。
-使い方: python tools/publish.py posts/001_trench
+使い方: python tools/publish.py posts/001_trench [--story]
+  --story を付けると、投稿のあとに story.jpg をストーリーにも出す
 必要な環境変数: IG_ACCESS_TOKEN, IG_USER_ID
 画像はこのリポジトリ(main、または IG_IMAGE_REF で指定したブランチ)に push 済みで、raw.githubusercontent.com から公開されている前提。
 """
@@ -31,7 +32,7 @@ def wait_ready(cid):
         time.sleep(5)
     sys.exit(f"container {cid} timed out")
 
-def main(post_dir):
+def main(post_dir, with_story=False):
     d = pathlib.Path(post_dir)
     slides = sorted(d.glob("slide_*.jpg"))
     caption = (d / "caption.txt").read_text(encoding="utf-8").strip()
@@ -44,7 +45,12 @@ def main(post_dir):
     carousel = call(f"{USER}/media", {"media_type": "CAROUSEL", "children": ",".join(children), "caption": caption})
     wait_ready(carousel["id"])
     pub = call(f"{USER}/media_publish", {"creation_id": carousel["id"]})
-    print(json.dumps({"published_media_id": pub.get("id"), "post": d.name}))
+    result = {"published_media_id": pub.get("id"), "post": d.name}
+    if with_story:
+        st = call(f"{USER}/media", {"image_url": RAW + (d / "story.jpg").as_posix(), "media_type": "STORIES"})
+        wait_ready(st["id"])
+        result["story_media_id"] = call(f"{USER}/media_publish", {"creation_id": st["id"]}).get("id")
+    print(json.dumps(result))
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], "--story" in sys.argv[2:])
