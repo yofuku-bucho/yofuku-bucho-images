@@ -1,0 +1,50 @@
+"""Instagramにカルーセル投稿する。
+使い方: python tools/publish.py posts/001_trench
+必要な環境変数: IG_ACCESS_TOKEN, IG_USER_ID
+画像はこのリポジトリ(main)に push 済みで、raw.githubusercontent.com から公開されている前提。
+"""
+import json, os, sys, time, pathlib, urllib.parse, urllib.request
+
+API = "https://graph.instagram.com/" + os.environ.get("IG_API_VERSION", "v22.0")
+RAW = "https://raw.githubusercontent.com/yofuku-bucho/yofuku-bucho-images/main/"
+TOKEN = os.environ["IG_ACCESS_TOKEN"]
+USER = os.environ["IG_USER_ID"]
+
+def call(path, params, method="POST"):
+    params = dict(params, access_token=TOKEN)
+    data = urllib.parse.urlencode(params).encode()
+    url = f"{API}/{path}"
+    req = urllib.request.Request(url, data=data) if method == "POST" else urllib.request.Request(url + "?" + data.decode())
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        sys.exit(f"API error {e.code}: {e.read().decode()}")
+
+def wait_ready(cid):
+    for _ in range(30):
+        st = call(cid, {"fields": "status_code"}, method="GET").get("status_code")
+        if st == "FINISHED":
+            return
+        if st == "ERROR":
+            sys.exit(f"container {cid} failed")
+        time.sleep(5)
+    sys.exit(f"container {cid} timed out")
+
+def main(post_dir):
+    d = pathlib.Path(post_dir)
+    slides = sorted(d.glob("slide_*.jpg"))
+    caption = (d / "caption.txt").read_text(encoding="utf-8").strip()
+    children = []
+    for s in slides:
+        r = call(f"{USER}/media", {"image_url": RAW + s.as_posix(), "is_carousel_item": "true"})
+        children.append(r["id"])
+    for c in children:
+        wait_ready(c)
+    carousel = call(f"{USER}/media", {"media_type": "CAROUSEL", "children": ",".join(children), "caption": caption})
+    wait_ready(carousel["id"])
+    pub = call(f"{USER}/media_publish", {"creation_id": carousel["id"]})
+    print(json.dumps({"published_media_id": pub.get("id"), "post": d.name}))
+
+if __name__ == "__main__":
+    main(sys.argv[1])
