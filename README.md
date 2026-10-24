@@ -1,0 +1,1 @@
+# yofuku-bucho-images
