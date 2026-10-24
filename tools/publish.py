@@ -1,5 +1,6 @@
 """Instagramにカルーセル投稿する。
 使い方: python tools/publish.py posts/001_trench [--story]
+  python tools/publish.py reels/001_flow --reel  （reel.mp4 と caption.txt をリールとして投稿）
   --story を付けると、投稿のあとに story.jpg をストーリーにも出す
 必要な環境変数: IG_ACCESS_TOKEN, IG_USER_ID
 画像はこのリポジトリ(main、または IG_IMAGE_REF で指定したブランチ)に push 済みで、raw.githubusercontent.com から公開されている前提。
@@ -22,8 +23,8 @@ def call(path, params, method="POST"):
     except urllib.error.HTTPError as e:
         sys.exit(f"API error {e.code}: {e.read().decode()}")
 
-def wait_ready(cid):
-    for _ in range(30):
+def wait_ready(cid, tries=30):
+    for _ in range(tries):
         st = call(cid, {"fields": "status_code"}, method="GET").get("status_code")
         if st == "FINISHED":
             return
@@ -31,6 +32,13 @@ def wait_ready(cid):
             sys.exit(f"container {cid} failed")
         time.sleep(5)
     sys.exit(f"container {cid} timed out")
+
+def publish_reel(d):
+    caption = (d / "caption.txt").read_text(encoding="utf-8").strip()
+    r = call(f"{USER}/media", {"media_type": "REELS", "video_url": RAW + (d / "reel.mp4").as_posix(), "caption": caption, "share_to_feed": "true"})
+    wait_ready(r["id"], tries=120)
+    pub = call(f"{USER}/media_publish", {"creation_id": r["id"]})
+    print(json.dumps({"published_media_id": pub.get("id"), "reel": d.name}))
 
 def main(post_dir, with_story=False):
     d = pathlib.Path(post_dir)
@@ -53,4 +61,7 @@ def main(post_dir, with_story=False):
     print(json.dumps(result))
 
 if __name__ == "__main__":
-    main(sys.argv[1], "--story" in sys.argv[2:])
+    if "--reel" in sys.argv[2:]:
+        publish_reel(pathlib.Path(sys.argv[1]))
+    else:
+        main(sys.argv[1], "--story" in sys.argv[2:])
