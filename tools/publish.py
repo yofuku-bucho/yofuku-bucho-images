@@ -35,7 +35,10 @@ def wait_ready(cid, tries=30):
 
 def publish_reel(d):
     caption = (d / "caption.txt").read_text(encoding="utf-8").strip()
-    r = call(f"{USER}/media", {"media_type": "REELS", "video_url": RAW + (d / "reel.mp4").as_posix(), "caption": caption, "share_to_feed": "true"})
+    params = {"media_type": "REELS", "video_url": RAW + (d / "reel.mp4").as_posix(), "caption": caption, "share_to_feed": "true"}
+    if (d / "reel_cover.jpg").exists():
+        params["cover_url"] = RAW + (d / "reel_cover.jpg").as_posix()
+    r = call(f"{USER}/media", params)
     wait_ready(r["id"], tries=120)
     pub = call(f"{USER}/media_publish", {"creation_id": r["id"]})
     print(json.dumps({"published_media_id": pub.get("id"), "reel": d.name}))
