@@ -3,14 +3,16 @@
   python tools/publish.py reels/001_flow --reel  （reel.mp4 と caption.txt をリールとして投稿）
   --story を付けると、投稿のあとに story.jpg をストーリーにも出す
 必要な環境変数: IG_ACCESS_TOKEN, IG_USER_ID
+  別アカウントで投稿するときは IG_ACCOUNT=PSY のように指定し、IG_ACCESS_TOKEN_PSY / IG_USER_ID_PSY を使う
 画像はこのリポジトリ(main、または IG_IMAGE_REF で指定したブランチ)に push 済みで、raw.githubusercontent.com から公開されている前提。
 """
 import json, os, sys, time, pathlib, urllib.parse, urllib.request
 
 API = "https://graph.instagram.com/" + os.environ.get("IG_API_VERSION", "v22.0")
 RAW = "https://raw.githubusercontent.com/yofuku-bucho/yofuku-bucho-images/" + os.environ.get("IG_IMAGE_REF", "main") + "/"
-TOKEN = os.environ["IG_ACCESS_TOKEN"]
-USER = os.environ["IG_USER_ID"]
+SUFFIX = "_" + os.environ["IG_ACCOUNT"] if os.environ.get("IG_ACCOUNT") else ""
+TOKEN = os.environ["IG_ACCESS_TOKEN" + SUFFIX]
+USER = os.environ["IG_USER_ID" + SUFFIX]
 
 def call(path, params, method="POST"):
     params = dict(params, access_token=TOKEN)
