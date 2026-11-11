@@ -1,5 +1,6 @@
 """今夜のリールを予告するストーリー画像(1080x1920)を作る。
-使い方: python tools/make_story.py reels/r43_rack ["今夜21時"]
+使い方: python tools/make_story.py reels/r43_rack ["今夜21時" ["下の一行"] ["見出しの後ろ"]]
+  例(12時): python tools/make_story.py reels/r40_cm_mannequin "12時" "答えはリールで。プロフィールからどうぞ" "公開中"
 reel_cover.jpg を背景に、caption.txt の1行目を問いとして大きく出し、reels/<reel>/story.jpg に保存する。
 """
 import base64, html, pathlib, re, sys
@@ -7,9 +8,12 @@ from playwright.sync_api import sync_playwright
 
 d = pathlib.Path(sys.argv[1])
 when = sys.argv[2] if len(sys.argv) > 2 else "今夜21時"
+sub = sys.argv[3] if len(sys.argv) > 3 else "答えは今夜のリールで。プロフィールからどうぞ"
+suffix = sys.argv[4] if len(sys.argv) > 4 else "公開"
 first = (d / "caption.txt").read_text(encoding="utf-8").strip().splitlines()[0]
 m = re.search(r"#(\d+)", (d / "caption.txt").read_text(encoding="utf-8"))
 series = f"売れる店のしくみ #{m.group(1)}" if m and "売れる店のしくみ" in (d / "caption.txt").read_text(encoding="utf-8") else "洋服部長の新作リール"
+if "何センチ" in (d / "caption.txt").read_text(encoding="utf-8"): series = "売れる店は、何センチ？シリーズ"
 q = html.escape(first).replace("、", "、<br>", 1)
 bg = base64.b64encode((d / "reel_cover.jpg").read_bytes()).decode()
 page = f"""<!doctype html><html><head><meta charset="utf-8"><style>
@@ -26,8 +30,8 @@ body{{width:1080px;height:1920px;position:relative;overflow:hidden;font-family:'
 #q .b{{font-size:34px;font-weight:700;color:#5b4540;margin-top:16px}}
 #acct{{position:absolute;bottom:90px;width:100%;text-align:center;font-family:'Oswald';font-size:34px;color:#e8d9c4;letter-spacing:.14em}}
 </style></head><body><div id="bg"></div><div id="ph"></div>
-<div id="when"><span>{html.escape(when)} 公開</span><div id="ser">{html.escape(series)}</div></div>
-<div id="q"><div class="a">{q}</div><div class="b">答えは今夜のリールで。プロフィールからどうぞ</div></div>
+<div id="when"><span>{html.escape(when)} {html.escape(suffix)}</span><div id="ser">{html.escape(series)}</div></div>
+<div id="q"><div class="a">{q}</div><div class="b">{html.escape(sub)}</div></div>
 <div id="acct">@yofuku.bucho</div></body></html>"""
 with sync_playwright() as pw:
     b = pw.chromium.launch(executable_path="/opt/pw-browsers/chromium")
