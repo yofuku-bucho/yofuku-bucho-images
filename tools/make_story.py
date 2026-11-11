@@ -11,6 +11,8 @@ when = sys.argv[2] if len(sys.argv) > 2 else "今夜21時"
 sub = sys.argv[3] if len(sys.argv) > 3 else "答えは今夜のリールで。プロフィールからどうぞ"
 suffix = sys.argv[4] if len(sys.argv) > 4 else "公開"
 first = (d / "caption.txt").read_text(encoding="utf-8").strip().splitlines()[0]
+if len(sys.argv) > 5 and sys.argv[5]:
+    first = sys.argv[5]  # 5番目: 見出しの上書き（1行目が長いとき。20字前後に）
 m = re.search(r"#(\d+)", (d / "caption.txt").read_text(encoding="utf-8"))
 series = f"売れる店のしくみ #{m.group(1)}" if m and "売れる店のしくみ" in (d / "caption.txt").read_text(encoding="utf-8") else "洋服部長の新作リール"
 if "何センチ" in (d / "caption.txt").read_text(encoding="utf-8"): series = "売れる店は、何センチ？シリーズ"
