@@ -18,4 +18,19 @@ Why lazy ants keep the colony alive
 保存して、チームづくりの前に見返してね。
 知りたい心理効果があればコメントで👇
 
+— English —
+Do colonies with "lazy" ants last longer?
+
+In ant colonies, about 20–30% of workers barely work at all.
+When a Hokkaido University team removed the hardest-working ants, some of the resting ants started working.
+
+In a computer simulation, colonies where everyone worked at once also got tired at once, so work stopped and the colony died sooner. Colonies with a "resting reserve" lasted longer.
+
+This is the research behind the so-called 2:6:2 rule.
+Note: we don't yet know whether it applies directly to human teams.
+
+Source: Hasegawa et al. (2016), Scientific Reports (Hokkaido University)
+
+Save this for the next time you build a team.
+
 #心理学 #心理学効果 #雑学 #豆知識 #働きアリの法則 #262の法則 #組織 #マネジメント #仕事 #つい研究所 #psychology
