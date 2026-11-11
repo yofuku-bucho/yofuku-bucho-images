@@ -1,5 +1,8 @@
-# 「つい」の研究所（@tsui.lab）の投稿待ちリスト。上から順に毎日22時に1本ずつ投稿する。
-# 投稿したら行頭に「done YYYY-MM-DD 」を付ける。
+# 「つい」の研究所（@tsui.lab）の投稿待ちリスト。上から順に毎日12時・22時に1本ずつ投稿する。
+# 投稿したら行頭に「done YYYY-MM-DD HH時 」を付ける。
+kokoro/posts/013_firstimpression
+kokoro/posts/014_similarity
+kokoro/posts/015_gainloss
 kokoro/posts/010_goldilocks
 kokoro/posts/011_thirdperson
 kokoro/posts/012_spotlight
