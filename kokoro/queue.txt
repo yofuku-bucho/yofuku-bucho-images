@@ -2,7 +2,7 @@
 # 投稿したら行頭に「done YYYY-MM-DD HH時 」を付ける。
 done 2026-11-11 22時 kokoro/posts/012_spotlight
 done 2026-11-11 22時 kokoro/posts/011_thirdperson
-kokoro/posts/015_gainloss
+done 2026-11-11 22時 kokoro/posts/015_gainloss
 kokoro/posts/014_similarity
 kokoro/posts/010_goldilocks
 kokoro/posts/013_firstimpression
