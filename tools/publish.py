@@ -2,6 +2,7 @@
 使い方: python tools/publish.py posts/001_trench [--story]
   python tools/publish.py reels/001_flow --reel  （reel.mp4 と caption.txt をリールとして投稿）
   --story を付けると、投稿のあとに story.jpg をストーリーにも出す
+  python tools/publish.py reels/r43_rack --story-only  （そのフォルダの story.jpg だけをストーリーに出す）
 必要な環境変数: IG_ACCESS_TOKEN, IG_USER_ID
 画像はこのリポジトリ(main、または IG_IMAGE_REF で指定したブランチ)に push 済みで、raw.githubusercontent.com から公開されている前提。
 """
@@ -63,8 +64,16 @@ def main(post_dir, with_story=False):
         result["story_media_id"] = call(f"{USER}/media_publish", {"creation_id": st["id"]}).get("id")
     print(json.dumps(result))
 
+def publish_story(d):
+    st = call(f"{USER}/media", {"image_url": RAW + (d / "story.jpg").as_posix(), "media_type": "STORIES"})
+    wait_ready(st["id"])
+    pub = call(f"{USER}/media_publish", {"creation_id": st["id"]})
+    print(json.dumps({"story_media_id": pub.get("id"), "dir": d.name}))
+
 if __name__ == "__main__":
-    if "--reel" in sys.argv[2:]:
+    if "--story-only" in sys.argv[2:]:
+        publish_story(pathlib.Path(sys.argv[1]))
+    elif "--reel" in sys.argv[2:]:
         publish_reel(pathlib.Path(sys.argv[1]))
     else:
         main(sys.argv[1], "--story" in sys.argv[2:])
