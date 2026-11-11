@@ -6,3 +6,5 @@ kokoro/posts/015_gainloss
 kokoro/posts/014_similarity
 kokoro/posts/010_goldilocks
 kokoro/posts/013_firstimpression
+kokoro/posts/016_jam
+kokoro/posts/017_ants
