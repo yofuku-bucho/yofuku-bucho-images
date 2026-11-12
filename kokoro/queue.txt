@@ -8,3 +8,6 @@ done 2026-11-11 22時 kokoro/posts/010_goldilocks
 done 2026-11-11 22時 kokoro/posts/013_firstimpression
 done 2026-11-12 12時 kokoro/posts/016_jam
 kokoro/posts/017_ants
+kokoro/posts/018_because
+kokoro/posts/019_scarcity
+kokoro/posts/020_dunning
