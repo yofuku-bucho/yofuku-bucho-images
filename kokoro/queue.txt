@@ -12,5 +12,8 @@ done 2026-11-14 12時 kokoro/posts/018_because
 kokoro/posts/019_scarcity
 kokoro/posts/020_dunning
 kokoro/posts/021_bridge
+kokoro/posts/024_guppy
 kokoro/posts/022_seating
+kokoro/posts/025_rat
 kokoro/posts/023_gottman
+kokoro/posts/026_capuchin
