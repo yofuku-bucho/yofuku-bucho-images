@@ -17,3 +17,6 @@ kokoro/posts/022_seating
 kokoro/posts/025_rat
 kokoro/posts/023_gottman
 kokoro/posts/026_capuchin
+kokoro/posts/024_monkey
+kokoro/posts/025_cleanerfish
+kokoro/posts/026_rats
