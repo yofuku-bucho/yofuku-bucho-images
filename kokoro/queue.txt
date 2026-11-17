@@ -19,3 +19,7 @@ kokoro/posts/023_gottman
 kokoro/posts/026_capuchin
 kokoro/posts/027_cleanerfish
 kokoro/posts/028_rats
+kokoro/posts/031_pigeon
+kokoro/posts/030_zeigarnik
+kokoro/posts/032_dog
+kokoro/posts/029_yawn
