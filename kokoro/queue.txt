@@ -15,7 +15,7 @@ done 2026-11-15 22時 kokoro/posts/021_bridge
 done 2026-11-16 12時 kokoro/posts/024_guppy
 done 2026-11-16 22時 kokoro/posts/022_seating
 done 2026-11-17 12時 kokoro/posts/025_rat
-kokoro/posts/023_gottman
+done 2026-11-17 22時 kokoro/posts/023_gottman
 kokoro/posts/026_capuchin
 kokoro/posts/027_cleanerfish
 kokoro/posts/028_rats
