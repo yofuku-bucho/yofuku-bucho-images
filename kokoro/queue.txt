@@ -23,3 +23,7 @@ kokoro/posts/031_pigeon
 kokoro/posts/030_zeigarnik
 kokoro/posts/032_dog
 kokoro/posts/029_yawn
+kokoro/posts/033_crow
+kokoro/posts/034_ikea
+kokoro/posts/035_guiltydog
+kokoro/posts/036_peakend
