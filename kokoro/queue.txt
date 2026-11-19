@@ -18,7 +18,7 @@ done 2026-11-17 12時 kokoro/posts/025_rat
 done 2026-11-17 22時 kokoro/posts/023_gottman
 done 2026-11-18 12時 kokoro/posts/026_capuchin
 done 2026-11-18 22時 kokoro/posts/027_cleanerfish
-kokoro/posts/028_rats
+done 2026-11-19 12時 kokoro/posts/028_rats
 kokoro/posts/031_pigeon
 kokoro/posts/030_zeigarnik
 kokoro/posts/032_dog
