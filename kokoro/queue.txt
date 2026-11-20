@@ -20,7 +20,7 @@ done 2026-11-18 12時 kokoro/posts/026_capuchin
 done 2026-11-18 22時 kokoro/posts/027_cleanerfish
 done 2026-11-19 12時 kokoro/posts/028_rats
 done 2026-11-19 22時 kokoro/posts/031_pigeon
-kokoro/posts/030_zeigarnik
+done 2026-11-20 12時 kokoro/posts/030_zeigarnik
 kokoro/posts/032_dog
 kokoro/posts/029_yawn
 kokoro/posts/033_crow
