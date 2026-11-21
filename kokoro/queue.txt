@@ -23,7 +23,7 @@ done 2026-11-19 22時 kokoro/posts/031_pigeon
 done 2026-11-20 12時 kokoro/posts/030_zeigarnik
 done 2026-11-20 22時 kokoro/posts/032_dog
 done 2026-11-21 12時 kokoro/posts/029_yawn
-kokoro/posts/033_crow
+done 2026-11-21 22時 kokoro/posts/033_crow
 kokoro/posts/034_ikea
 kokoro/posts/035_guiltydog
 kokoro/posts/036_peakend
