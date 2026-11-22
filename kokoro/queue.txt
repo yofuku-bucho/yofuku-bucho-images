@@ -36,3 +36,6 @@ kokoro/posts/042_reciprocity
 kokoro/posts/043_monkey
 kokoro/posts/044_framing
 kokoro/posts/045_decoy
+kokoro/posts/046_dopamine
+kokoro/posts/047_frenemy
+kokoro/posts/048_cynic
