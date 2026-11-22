@@ -1,0 +1,44 @@
+MITの実験で判明「アンカリング効果」
+【心理学用語】アンカリング効果｜The Anchoring Effect
+
+セールで、つい買いすぎる理由
+Why sales make us overspend
+
+MIT（マサチューセッツ工科大学）の授業で行われた実験です。
+商品を見せる前に、学生に自分の社会保障番号（アメリカの個人番号）の下2けたを書いてもらいました。
+そのあとで、キーボードやワインなどにいくらまで払うかを答えてもらいます。
+
+すると、番号が大きい人ほど高い値段をつけました。
+コードレスキーボードでは、番号が大きいグループは約56ドル、小さいグループは約16ドル。約3.5倍の差です。
+番号と商品は、まったく関係ないのにです。
+
+これを「アンカリング効果」と言います。
+最初に見た数字が「ものさし」になり、そのあとの判断がそこから離れられなくなります。
+
+セールの「元値 ¥9,800 → ¥4,980」も同じしくみです。
+買う前に元値を手で隠して、「この値段なら、ふだんの自分は買う？」と考えてみてください。
+
+出典: Ariely, Loewenstein & Prelec (2003), The Quarterly Journal of Economics（MIT）
+
+ついセールで買いすぎる人に送って。
+
+— English —
+Why do sales make us overspend?
+
+In a class at MIT, students first wrote down the last two digits of their Social Security number.
+Then they said how much they would pay for items like a cordless keyboard or a bottle of wine.
+
+Students with higher numbers offered more. For the keyboard, the high-number group bid about $56 and the low-number group about $16, roughly 3.5 times more.
+The numbers had nothing to do with the products.
+
+This is called the anchoring effect.
+The first number we see becomes a yardstick, and we struggle to move far from it.
+
+The "was $98, now $49" tag on a sale works the same way.
+Before you buy, cover the original price and ask: would I pay this on a normal day?
+
+Source: Ariely, Loewenstein & Prelec (2003), The Quarterly Journal of Economics (MIT)
+
+Send this to a friend who always overspends on sales.
+
+#心理学 #アンカリング効果 #ブラックフライデー #つい研究所 #psychology

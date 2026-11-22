@@ -28,6 +28,7 @@ done 2026-11-22 12時 kokoro/posts/034_ikea
 kokoro/posts/035_guiltydog
 kokoro/posts/036_peakend
 kokoro/posts/037_peck
+kokoro/posts/041_anchor
 kokoro/posts/038_exposure
 kokoro/posts/039_average
 kokoro/posts/040_halo
