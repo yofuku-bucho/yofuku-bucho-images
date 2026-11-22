@@ -32,3 +32,7 @@ kokoro/posts/041_anchor
 kokoro/posts/038_exposure
 kokoro/posts/039_average
 kokoro/posts/040_halo
+kokoro/posts/042_reciprocity
+kokoro/posts/043_monkey
+kokoro/posts/044_framing
+kokoro/posts/045_decoy

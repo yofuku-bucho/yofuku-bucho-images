@@ -1,0 +1,52 @@
+MITの実験で判明「おとり効果」
+【心理学用語】おとり効果｜The Decoy Effect
+
+おとりがあると、つい高い方を選ぶ理由
+Why a decoy makes us pick the pricier option
+
+MIT（マサチューセッツ工科大学）の学生100人に、雑誌の購読プランを選んでもらいました。
+・ネットのみ 59ドル
+・紙のみ 125ドル
+・紙＋ネット 125ドル
+
+「紙のみ」と「紙＋ネット」は同じ値段。紙のみを選ぶ人は0人でした。
+そして84%が「紙＋ネット」を選びました。
+
+ところが、誰も選ばなかった「紙のみ」を外して2択にすると、
+「紙＋ネット」を選んだ人は32%まで減りました。
+
+これを「おとり効果」と言います。
+明らかに損な選択肢があると、それと比べて高いプランが「お得」に見えてしまいます。
+
+カフェのS・M・Lで、つい M や L を選ぶのも同じしくみです。
+選ぶ前に、「真ん中の選択肢は、比べさせるためにある？」と考えてみてください。
+
+出典: Ariely (2008), Predictably Irrational（MIT）
+
+ついセットの方を選んじゃう人に送って。
+
+— English —
+Why does a decoy make us pick the pricier option?
+
+At MIT, 100 students chose a magazine subscription:
+- Web only: $59
+- Print only: $125
+- Print + web: $125
+
+No one chose print only, since it cost the same as print + web.
+84% chose print + web.
+
+But when the print-only option that nobody picked was removed,
+only 32% chose print + web.
+
+This is called the decoy effect.
+A clearly worse option makes the pricier plan look like a bargain.
+
+Small, medium and large at a café work the same way.
+Before you pick, ask: is that middle option only there to compare against?
+
+Source: Ariely (2008), Predictably Irrational (MIT)
+
+Send this to a friend who always goes for the bundle.
+
+#心理学 #おとり効果 #心理学用語 #つい研究所 #psychology
