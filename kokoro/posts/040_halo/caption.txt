@@ -17,6 +17,10 @@ One good trait colors everything
 
 面接やデートでは、最初の笑顔ひとつで、見た目や話し方の評価まで変わるかもしれません。
 
+▼なぜ起きる？
+1. 脳は「好き／苦手」の全体の印象を先に決め、細かい評価をそれに合わせる
+2. しかも本人は影響に気づけない。実験の学生も否定した
+
 出典: Nisbett & Wilson (1977), Journal of Personality and Social Psychology（ミシガン大学）
 
 つい第一印象で決めちゃう人に送って。
@@ -35,6 +39,10 @@ This is called the halo effect.
 One good (or bad) impression spills over onto things that have nothing to do with it.
 
 In an interview or on a date, one warm smile at the start may change how your looks and voice are judged.
+
+Why does it happen?
+1. The brain forms an overall impression first, then bends the details to fit it.
+2. And we can't notice it happening. The students denied any influence.
 
 Source: Nisbett & Wilson (1977), Journal of Personality and Social Psychology (University of Michigan)
 

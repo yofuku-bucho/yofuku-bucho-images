@@ -18,6 +18,10 @@ Bは、Aのつらさを全部ふくんだうえに30秒長い、つまり「つ�
 デートも接客も、最後の5分をいちばん良く。
 終わりよければ、全体がよく記憶に残ります。
 
+▼なぜ起きる？
+1. 脳は体験をすべて記録せず、「いちばん強い瞬間」と「最後」だけを要約して残す
+2. しかも長さはほとんど無視される（持続時間の無視）
+
 出典: Kahneman, Fredrickson, Schreiber & Redelmeier (1993), Psychological Science（カリフォルニア大学バークレー校ほか）
 
 つい「終わりよければ」の人に送って。
@@ -38,6 +42,10 @@ This is the peak-end rule.
 
 On a date or with a customer, make the last five minutes the best.
 A good ending colors the whole memory.
+
+Why does it happen?
+1. The brain doesn't record the whole experience. It keeps a summary: the most intense moment and the end.
+2. How long it lasted is mostly ignored (duration neglect).
 
 Source: Kahneman, Fredrickson, Schreiber & Redelmeier (1993), Psychological Science (UC Berkeley and others)
 
