@@ -3,3 +3,6 @@
 done 2026-11-23 19時 kokoro/carousels/c01_sale
 kokoro/carousels/c03_work
 kokoro/carousels/c02_relation
+kokoro/carousels/c04_animal
+kokoro/carousels/c05_self
+kokoro/carousels/c06_hooked
