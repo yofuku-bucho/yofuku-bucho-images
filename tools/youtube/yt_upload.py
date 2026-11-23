@@ -32,12 +32,17 @@ def creds():
 def main():
     cmd = sys.argv[1]
     if cmd == "auth-url":
-        url, _ = flow().authorization_url(access_type="offline", prompt="consent")
+        f = flow()
+        url, _ = f.authorization_url(access_type="offline", prompt="consent")
+        open(TOKEN + ".verifier", "w").write(f.code_verifier or "")
         print(url)
     elif cmd == "auth-code":
         arg = sys.argv[2]
         code = urllib.parse.parse_qs(urllib.parse.urlparse(arg).query).get("code", [arg])[0]
-        f = flow(); f.fetch_token(code=code)
+        f = flow()
+        if os.path.exists(TOKEN + ".verifier"):
+            f.code_verifier = open(TOKEN + ".verifier").read() or None
+        f.fetch_token(code=code)
         open(TOKEN, "w").write(f.credentials.to_json()); print("token saved")
     elif cmd == "upload":
         path, title, desc = sys.argv[2:5]
