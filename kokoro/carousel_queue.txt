@@ -1,0 +1,5 @@
+# 「つい」の研究所（@tsui.lab）の保存版カルーセル待ちリスト。毎日19時に上から1本ずつ投稿する。
+# 投稿したら行頭に「done YYYY-MM-DD 19時 」を付ける。
+kokoro/carousels/c01_sale
+kokoro/carousels/c03_work
+kokoro/carousels/c02_relation
