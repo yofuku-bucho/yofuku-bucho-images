@@ -30,7 +30,7 @@ done 2026-11-23 12時 kokoro/posts/036_peakend
 done 2026-11-23 22時 kokoro/posts/037_peck
 done 2026-11-24 12時 kokoro/posts/041_anchor
 done 2026-11-24 22時 kokoro/posts/038_exposure
-kokoro/posts/039_average
+done 2026-11-25 12時 kokoro/posts/039_average
 kokoro/posts/040_halo
 kokoro/posts/042_reciprocity
 kokoro/posts/043_monkey
