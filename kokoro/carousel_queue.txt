@@ -2,7 +2,7 @@
 # 投稿したら行頭に「done YYYY-MM-DD 19時 」を付ける。
 done 2026-11-23 19時 kokoro/carousels/c01_sale
 done 2026-11-24 19時 kokoro/carousels/c03_work
-kokoro/carousels/c02_relation
+done 2026-11-25 19時 kokoro/carousels/c02_relation
 kokoro/carousels/c04_animal
 kokoro/carousels/c05_self
 kokoro/carousels/c06_hooked
