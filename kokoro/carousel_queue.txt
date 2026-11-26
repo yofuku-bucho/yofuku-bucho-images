@@ -6,3 +6,6 @@ done 2026-11-25 19時 kokoro/carousels/c02_relation
 kokoro/carousels/c04_animal
 kokoro/carousels/c05_self
 kokoro/carousels/c06_hooked
+kokoro/carousels/c07_money
+kokoro/carousels/c08_crowd
+kokoro/carousels/c09_sns
