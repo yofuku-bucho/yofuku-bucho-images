@@ -33,7 +33,7 @@ done 2026-11-24 22時 kokoro/posts/038_exposure
 done 2026-11-25 12時 kokoro/posts/039_average
 done 2026-11-25 22時 kokoro/posts/040_halo
 done 2026-11-26 12時 kokoro/posts/042_reciprocity
-kokoro/posts/043_monkey
+done 2026-11-26 22時 kokoro/posts/043_monkey
 kokoro/posts/044_framing
 kokoro/posts/045_decoy
 kokoro/posts/046_dopamine
