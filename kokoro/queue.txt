@@ -32,7 +32,7 @@ done 2026-11-24 12時 kokoro/posts/041_anchor
 done 2026-11-24 22時 kokoro/posts/038_exposure
 done 2026-11-25 12時 kokoro/posts/039_average
 done 2026-11-25 22時 kokoro/posts/040_halo
-kokoro/posts/042_reciprocity
+done 2026-11-26 12時 kokoro/posts/042_reciprocity
 kokoro/posts/043_monkey
 kokoro/posts/044_framing
 kokoro/posts/045_decoy
