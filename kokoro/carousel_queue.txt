@@ -4,7 +4,7 @@ done 2026-11-23 19時 kokoro/carousels/c01_sale
 done 2026-11-24 19時 kokoro/carousels/c03_work
 done 2026-11-25 19時 kokoro/carousels/c02_relation
 done 2026-11-26 19時 kokoro/carousels/c04_animal
-kokoro/carousels/c05_self
+done 2026-11-27 19時 kokoro/carousels/c05_self
 kokoro/carousels/c06_hooked
 kokoro/carousels/c07_money
 kokoro/carousels/c08_crowd
