@@ -1,8 +1,5 @@
-ニューヨーク大学の実験で判明「傍観者効果」
-【心理学用語】傍観者効果｜The Bystander Effect
-
 人が多いと、つい見て見ぬふりしてない？
-Why crowds help less
+【心理学用語】傍観者効果
 
 ニューヨーク大学で行われた実験です。
 学生は個室に入り、インターホンでほかの参加者と話し合います。
@@ -22,19 +19,4 @@ Why crowds help less
 
 つい様子を見ちゃう人に送って。
 
-— English —
-Why do crowds help less?
-
-At New York University, students talked over an intercom from separate rooms. Partway through, one voice seemed to have a seizure (it was a recording).
-
-When students thought they were the only listener, 85% went to help before the seizure ended. When they thought four others were listening, only 31% did.
-
-This is the bystander effect. Responsibility spreads across the group, and when nobody moves, we assume it must be fine.
-
-If you need help, point to one person: "You in the blue jacket, please call an ambulance."
-
-Source: Darley & Latané (1968), Journal of Personality and Social Psychology (New York University / Columbia University)
-
-Send this to a friend who always waits to see what others do.
-
-#心理学 #傍観者効果 #社会心理学 #つい研究所 #psychology
+#心理学 #傍観者効果 #社会心理学 #つい研究所

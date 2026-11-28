@@ -1,8 +1,5 @@
-コーネル大学の実験で判明「保有効果」
-【心理学用語】保有効果｜The Endowment Effect
-
 フリマで、つい高値をつけてない？
-Why we overvalue what we own
+【心理学用語】保有効果
 
 コーネル大学の授業で、半分の学生に大学のロゴ入りマグカップをプレゼントしました。
 
@@ -21,19 +18,4 @@ Why we overvalue what we own
 
 つい物を捨てられない人に送って。
 
-— English —
-Why do we overvalue what we own?
-
-In a class at Cornell University, half the students were given a university coffee mug.
-Owners were asked how much they would sell it for, and the others how much they would pay.
-Sellers asked about $7.12, while buyers offered about $2.87, more than twice as much for the same mug.
-
-This is the endowment effect. Once something is ours, giving it up feels like a loss, and losses hurt more than gains feel good.
-
-When you can't sell or throw something away, ask: would I buy this today, at this price?
-
-Source: Kahneman, Knetsch & Thaler (1990), Journal of Political Economy (Cornell University)
-
-Send this to a friend who can't throw anything away.
-
-#心理学 #保有効果 #行動経済学 #つい研究所 #psychology
+#心理学 #保有効果 #行動経済学 #つい研究所
