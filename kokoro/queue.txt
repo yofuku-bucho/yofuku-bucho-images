@@ -43,3 +43,7 @@ kokoro/posts/049_compare
 kokoro/posts/050_endowment
 kokoro/posts/051_bystander
 kokoro/posts/052_primacy
+kokoro/posts/053_pratfall
+kokoro/posts/054_chameleon
+kokoro/posts/055_phone
+kokoro/posts/056_planning
