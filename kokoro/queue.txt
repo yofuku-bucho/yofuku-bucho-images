@@ -37,7 +37,7 @@ done 2026-11-26 22時 kokoro/posts/043_monkey
 done 2026-11-27 12時 kokoro/posts/044_framing
 done 2026-11-27 22時 kokoro/posts/045_decoy
 done 2026-11-28 12時 kokoro/posts/046_dopamine
-kokoro/posts/047_frenemy
+done 2026-11-28 22時 kokoro/posts/047_frenemy
 kokoro/posts/048_cynic
 kokoro/posts/049_compare
 kokoro/posts/050_endowment
